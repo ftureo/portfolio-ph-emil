@@ -1,22 +1,19 @@
-// Import to use React Router DOM and routing completely
-import { Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import { Layout } from "./components/Layout";
+import { NotFound } from "./pages/NotFound";
+import routes from "./routes";
 
 function App() {
-    return (
-        <Routes>
-            <Route
-                path="/"
-                element={
-                    <>
-                        <h1 className="text-3xl font-bold underline">
-                            React App
-                        </h1>
-                    </>
-                }
-            />
-            {/* <Route path="/about" element={<About />} /> */}
-        </Routes>
-    );
+    console.log({routes});
+    const router = createBrowserRouter([
+        {
+            element: <Layout />,
+            errorElement: <NotFound />,
+            children: routes,
+        },
+    ]);
+    return <RouterProvider router={router} />;
 }
 
 export default App;

@@ -1,3 +1,5 @@
 export const AboutMe = () => {
-    return <></>;
+    return <>
+        <h1>About Me</h1>
+    </>;
 };
