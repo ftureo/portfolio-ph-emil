@@ -1,5 +1,5 @@
+import { Layout } from "../components/Layout";
+
 export const AboutMe = () => {
-    return <>
-        <h1>About Me</h1>
-    </>;
+    return <Layout />;
 };

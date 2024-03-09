@@ -1,4 +1,5 @@
-export const MainAlbum = ({ ...props }) => {
-    console.log(props);
-    return <h1>{props.title}</h1>;
+import { Layout } from "../components/Layout";
+
+export const MainAlbum = () => {
+    return <Layout />;
 };
