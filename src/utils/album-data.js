@@ -1,5 +1,5 @@
-import coverPhoto1 from "../assets/album01-01.jpeg";
-import coverPhoto2 from "../assets/album02-01.jpeg";
+import coverPhoto1 from "../assets/imgs/album01-01.jpeg";
+import coverPhoto2 from "../assets/imgs/album02-01.jpeg";
 
 export const albumData = [
     {
