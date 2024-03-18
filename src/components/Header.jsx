@@ -3,8 +3,8 @@ import { paths } from "../routes/paths";
 
 export const Header = () => {
     return (
-        <header className="py-4 container mx-auto flex justify-between items-center lg:px-12">
-            <div className="container w-48">
+        <header className="py-4 flex justify-between items-center px-8 sm:px-12 md:px-6 lg:px-12 lg:w-full header_custom">
+            <div className="show-logo">
                 <Link to={paths.HOME}>
                     <img
                         src="https://cdn-icons-png.flaticon.com/256/5904/5904483.png"
@@ -13,20 +13,27 @@ export const Header = () => {
                     />
                 </Link>
             </div>
-            <nav className="hidden md:block">
-                <ul className="flex space-x-8">
-                    <li className="w-24">
+            <h1 className="brand-title">
+                <Link to={paths.HOME}>
+                    <span className="">Emilse Scavone </span>
+                    <br className="sm: hidden md:hidden" />
+                    <span className="x">Fotografia</span>
+                </Link>
+            </h1>
+            <nav className="hidden lg:block">
+                <ul className="flex">
+                    <li className="item-navbar md:px-6 lg:w-30 lg:px-6">
                         <Link to={paths.ALBUMES}>Álbumes</Link>
                     </li>
-                    <li>
+                    <li className="item-navbar md:px-6 lg:w-30 lg:px-6">
                         <Link to={paths.ABOUT_ME}>Sobre mí</Link>
                     </li>
-                    <li>
+                    <li className="item-navbar md:px-6 lg:w-30 lg:px-6">
                         <Link to={paths.SHOP}>Shop</Link>
                     </li>
                 </ul>
             </nav>
-            <div className="md:hidden">
+            <div className="lg:hidden">
                 <svg
                     enableBackground="new 0 0 32 32"
                     id="Glyph"
