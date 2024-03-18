@@ -4,11 +4,11 @@ export const Album = ({ album, index }) => {
             className={`container flex items-center ${
                 index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             }
-            flex-col sm:items-center sm:justify-center 
-
+            flex-col sm:items-center sm:justify-center
+            smooth-appearance
             `}
         >
-            <div className="w-1/2">
+            <div className="w-1/2 p-8">
                 <img
                     src={album.coverPhoto}
                     alt={album.title}
